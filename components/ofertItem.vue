@@ -1,6 +1,6 @@
 <template>
   <article class="ofert__item">
-    <img src="#" />
+    <img src="#" alt="zdjęcie zaproszenia" />
     <div class="item__info">
       <h3>{{this.newName}}</h3>
       <p>
