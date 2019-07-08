@@ -9,6 +9,8 @@ export default {
       lang: 'pl-PL',
     },
     script: [{
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'
+    }, {
       src: 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js'
     }],
     meta: [{
