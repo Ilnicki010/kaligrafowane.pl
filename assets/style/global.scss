@@ -1,0 +1,110 @@
+@import './vars.scss';
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'DM Serif Text', serif;
+  padding: 10px 0;
+  color: $black;
+}
+
+h1 {
+  font-size: $x-large;
+}
+
+h2 {
+  font-size: $large;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+hr {
+  width: 80px;
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: 10px;
+}
+
+article {}
+
+section {
+  width: 100vw;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 5vh;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 1px;
+  }
+
+  &::after {
+    width: 40px;
+    bottom: 10px;
+    background: $gold;
+  }
+
+  &::before {
+    width: 80px;
+    bottom: 5px;
+    background: $blue;
+  }
+}
+
+.btn {
+  border: 1.2px solid $blue;
+  font-size: $regular;
+  padding: 1.1vh 40px;
+  font-family: 'DM Serif Text', serif;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: transform .1s ease-out;
+  margin-top: 5%;
+
+  &:hover {
+    transform: scale(1.03)
+  }
+}
+
+.btn--primary {
+  background: $blue;
+  color: #fff;
+}
+
+.btn--ghost {
+  color: $blue;
+  border: 1.2px solid $blue;
+  background: transparent;
+}
+
+//transitions 
+.fade-enter-active {
+  transition: all 0.3s ease-in;
+  transition-property: opacity, transform;
+}
+
+.fade-enter {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.fade-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+//media queries
+@media (min-width: 720px) {
+  h1 {
+    font-size: $xx-large;
+  }
+}
