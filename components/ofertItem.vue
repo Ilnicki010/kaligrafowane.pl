@@ -25,8 +25,8 @@
 export default {
   data() {
     return {
-      newName: null,
-      newPrice: null,
+      newName: 'Nazwa Produktu',
+      newPrice: 0,
       newColors: []
     }
   },

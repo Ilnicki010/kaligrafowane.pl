@@ -17,8 +17,8 @@
       </transition>
     </section>
     <section data-aos="fade-up" data-aos-duration="1000" class="whyIsWorthWrapper">
+      <h2>Dlaczego Warto?</h2>
       <article class="whyIsWorthContent">
-        <h2>Dlaczego Warto?</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <button class="btn btn--ghost">Oferta</button>
       </article>
@@ -38,8 +38,8 @@
       </aside>
     </section>
     <section data-aos="fade-up" data-aos-duration="1000" class="ofertWrapper">
+      <h2>Oferta</h2>
       <article class="ofert__info">
-        <h2>Oferta</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           <br />empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -155,6 +155,7 @@ export default {
 .ofertWrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   .ofert__info {
     text-align: center;
   }
